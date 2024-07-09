@@ -101,4 +101,5 @@ func testFloat32Framework(t *testing.T, sortingFunction func([]float32) []float3
 func TestSelection(t *testing.T) {
 	testIntFramework(t, sort.SelectionSort[int])
 	testFloat32Framework(t, sort.SelectionSort[float32])
+	testIntFramework(t, sort.BubbleSort[int])
 }
